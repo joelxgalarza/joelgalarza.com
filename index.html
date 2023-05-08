@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <div class="header">
+
+        <video autoplay loop class="back-video" muted plays-inline>
+            <source src="media/background.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <img src="media/joel.jpg" class="logo">
+            <ul class="nav-links">
+                <li><a href="">Purpose</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Interests</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf2sDLoVv0SWXoUgmkj1ffDeaGpSfIoj2W9Rs1IGZlPZVFNaw/viewform?usp=sharing" class="sla">Sneaky Link Application</a></li>
+
+
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>I'm so close to ending it all</h1>
+            <form>
+                <input type="text" placeholder="&#x270e; Search for Leaked CIA Documents">
+                <button type="submit"> Enter </button>
+            </form>
+
+            <div class="category-list">
+                <div class="category">
+                    <a href="https://www.youtube.com/@Joellations">
+                    <img src = "media/yt.png">
+                    <p>Youtube</p>
+                </div>
+                <div class="category">
+                    <a href="https://www.instagram.com/joelxgalarza/">
+                    <img src="media/ig.png"> 
+                    <p>Instagram</p>
+                </div>
+                <div class="category">
+                    <a href="https://www.joellography.com">
+                    <img src="media/logo.png">
+                    <p>Photography</p>
+                </div>
+                <div class="category">
+                    <a href="https://stackoverflow.com/users/20144100/joel-galarza">
+
+                <img src="media/stackOverflow.png"> 
+                <p>Stack Overflow</p> 
+                </div>  
+                <div class="category">
+                    <a href="https://leetcode.com/joelxgalarza/">
+                    <img src="media/leetcode.png">
+                    <p>Leetcode</p> 
+                </div>
+                <div class="category">
+                    <a href="https://github.com/joelxgalarza/">
+                        <img src="media/github.png">
+                        <p>Github</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="audio-container">
+            <audio id="background-audio" autoplay loop controls>
+                <source src="media/song.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <script>
+            // Automatically play the audio when the page loads
+            window.addEventListener('DOMContentLoaded', function() {
+                var audio = document.getElementById('background-audio');
+                audio.play();
+            });
+        </script>
+
+
+
+</body>
+</html>
