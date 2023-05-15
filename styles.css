@@ -8,18 +8,18 @@ body {
 
 .header{
     height: 100vh;
-    width: 100%;
-    padding: 0 5%; 
-    background: #000000;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     padding: 0 20px;
+    height: 100vh;
 }
 
 nav{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
     z-index: 2;
 
 }
@@ -48,46 +48,70 @@ nav{
 }
 .nav-links {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+  }
+.nav-links li {
+
+    margin: 15px 20px;
 }
-.nav-links li{
-    display: inline-block;
-    margin: 0 15px;
+.nav-links img {
+    display: flex;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
 }
-.nav-links li a{
+.nav-links li:not(:nth-child(3)) a {
+    font-size: larger;
     text-decoration: none;
     color: #fff;
     padding: 5px 0;
     position: relative;
+    background-color: #808080;
+    border-radius: 20px;
+    width: 80px; 
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.nav-links li a::after{
+
+.nav-links li{
+    margin: 0 40px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px; 
+    position: relative;
+}
+
+.nav-links li a::after {
     content: '';
-    background: #ff3d00;
+    background: #ffbb00;
     width: 0;
     height: 2px;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 5;
     transition: .25s;
+    opacity: 100%;
+}
+.nav-links li a:hover{
+    opacity: 80%;
+    transition: .3s;
+    text-decoration: none;
+
 }
 .nav-links li a:hover:after{
 width: 100%;
+opacity: 0.5;
 }
-.sla{
-    background-color: #d9edffa9;
-    color: #ffffff;
-    padding: 10px 30px;
-    border-radius: 2px;
-    cursor: pointer;
-    position: relative;
-    z-index: 3;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: calc(100% - 30px);
-    align-self: center;
-}
+
 .category a {
     color: #ffffff; 
     text-decoration: none; 
@@ -177,5 +201,4 @@ width: 100%;
         width: auto;
         height: 100%;
     }
-}
 }
