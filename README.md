@@ -1,2 +1,0 @@
-# joelgalarza.com
-Personal Website
