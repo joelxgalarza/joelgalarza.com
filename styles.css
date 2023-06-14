@@ -79,6 +79,7 @@ nav{
     justify-content: center;
 }
 
+
 .nav-links li{
     margin: 0 40px;
 }
@@ -110,6 +111,11 @@ nav{
 .nav-links li a:hover:after{
 width: 100%;
 opacity: 0.5;
+}
+.nav-links li:nth-child(3) a:hover::after {
+    /* Remove the hover styles */
+    width: 0;
+    opacity: 0;
 }
 
 .category a {

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="projects.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="">Purpose</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="index.html"><img src="media/joel.jpg"></a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="box" id="generator-box">
+          <header class="project-titles" id="generator-title">Meme, Quote, Joke, and Riddle Generator</header>
+
+          <main>
+            <section class="content">
+            <p class="text-above-generated-content" id="text-above-meme">
+              Meme:
+            </p>
+            <p class="text-above-generated-content" id="text-above-joke">
+              Joke:
+            </p>
+            <p class="text-above-generated-content" id="text-above-quote">
+              Quote:
+            </p>
+            <p class="text-above-generated-content" id="text-above-riddle">
+              Riddle:
+            </p>
+          </section>
+            <section class="sidebar">
+              <h2 id="actions-header">Actions</h2>
+              <div class="action-buttons">
+                <button onclick="showMeme()" id="showMemeButton">Show a Meme</button>
+                <button onclick="showJoke()">Tell Me a Joke</button>
+                <button onclick="showQuote()">Random Quote</button>
+                <button onclick="showRiddle()">Riddle me</button>
+                <button class="reveal-btn" onclick="revealAnswers()">Reveal Riddle Answer</button>
+              </div>
+            </section>
+          </main>
+        </div>
+        <script src="projects.js" async defer></script>
+    </body>
+</html>
+

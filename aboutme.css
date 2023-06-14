@@ -1,0 +1,54 @@
+body{
+font: 100% "Product Sans", sans-serif;
+color: white;
+background-color:#000000;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+-moz-font-feature-settings: "liga" on;
+}
+p{
+    color:#EFF1F3;
+}
+.content-box{
+    border: #dfe8f1;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #001d3d;
+    width: 95%;
+    height: 95%;
+}
+.content{
+    margin: 20px;
+}
+.listOne{
+    margin-left: 20px;
+}
+.portrait{
+    width: 25%;
+    height: 25%;
+
+}
+
+.header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+}
+.midLogo{
+    height: 10%;
+    width: 10%;
+}
